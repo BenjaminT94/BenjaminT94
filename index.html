@@ -1,48 +1,39 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
-  <title>Benjamin Tran's Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <td>
-   <h2 My name is Benjamin Tran, I am currently a data analyst at a consulting firm in Costa Mesa </h2>
-  </td>
-  <table border="1">
-    <thead>
-      <tr>
-        <th colspan="3">About Me</th>
-      </tr>
-      <tr>
-        <th>Favorite Movies</th>
-        <th>Favorite Songs</th>
-        <th>Favorite Activities</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Fight Club</td>
-        <td>Bad Guy - Eminem</td>
-        <td>Cooking for friends and family</td>
-      </tr>
-    </table>
-  <!-- Headline -->
-  <h1>An image of me</h1>
-  <!-- Image -->
-  <img src="PRP Profile.jpg" />
-  <br>
 
-  <!-- Nesting anchor elements inside of li elements -->
-  <h3>Here are some links to get to know me better:</h3>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/btran2/">My LinkedIn</a></li>
-    <li><a href="https://www.facebook.com/BenjiMTran">My Facebook</a></li>
-    <li><a href="https://github.com/BenjaminT94">My Github</a></li>
-  </ul>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Your Name</h2>
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+      </section>
+      <p> Hi there ! Looks like you have found my page. My name is Benjamin Tran and I am a lifelong learner. I am currently experimenting with my HTML so once in awhile you will notice that this page will look a little differently.</p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">benjietran1994@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">https://www.github.com/BenjaminT94</a></li>
+        <li><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/btran2/</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
